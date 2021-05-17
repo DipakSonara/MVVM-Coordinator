@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MVVM_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-HG-Z61">
+                                <rect key="frame" x="138" y="362" width="138" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="b0d-ZQ-vQf"/>
+                                    <constraint firstAttribute="height" constant="76" id="uvO-Fi-sZ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXM-Jn-rNI">
+                                <rect key="frame" x="141" y="484" width="132" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="cEm-w7-k2L"/>
+                                    <constraint firstAttribute="height" constant="50" id="q7e-HE-ZGA"/>
+                                </constraints>
+                                <state key="normal" title="Go to register page"/>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8d-td-ttJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zt8-HG-Z61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35l-Rm-0QL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wXM-Jn-rNI" secondAttribute="bottom" constant="328" id="CC6-DC-qkg"/>
+                            <constraint firstItem="wXM-Jn-rNI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Moc-I3-0EZ"/>
+                            <constraint firstItem="zt8-HG-Z61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="318" id="fUU-GS-A3I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="registerButton" destination="wXM-Jn-rNI" id="Ce5-fS-Qhe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="3uZ-SZ-Eoa">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RFp-Gh-uh9" customClass="RegistrationViewController" customModule="MVVM_Coordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ViD-kJ-mYS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMv-cM-Hff">
+                                <rect key="frame" x="98" y="353" width="218.5" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="n4L-g4-3PM"/>
+                                    <constraint firstAttribute="width" constant="218.5" id="zwy-1T-oSQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyP-ZC-KmU">
+                                <rect key="frame" x="143.5" y="493" width="127" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="VMP-49-lhI"/>
+                                    <constraint firstAttribute="height" constant="50" id="nbc-Jt-ET5"/>
+                                </constraints>
+                                <state key="normal" title="Back to login page"/>
+                                <connections>
+                                    <action selector="backToLoginTapped:" destination="RFp-Gh-uh9" eventType="touchUpInside" id="MoH-lp-qHH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wc4-XT-RL9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XMv-cM-Hff" firstAttribute="centerX" secondItem="ViD-kJ-mYS" secondAttribute="centerX" id="1Wd-WC-ypv"/>
+                            <constraint firstItem="XMv-cM-Hff" firstAttribute="top" secondItem="Wc4-XT-RL9" secondAttribute="top" constant="309" id="Bxe-4n-Jhh"/>
+                            <constraint firstItem="EyP-ZC-KmU" firstAttribute="centerX" secondItem="ViD-kJ-mYS" secondAttribute="centerX" id="OpR-sn-WO5"/>
+                            <constraint firstItem="Wc4-XT-RL9" firstAttribute="bottom" secondItem="EyP-ZC-KmU" secondAttribute="bottom" constant="319" id="d1u-Yz-Xmi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backToLoginButton" destination="EyP-ZC-KmU" id="3KU-pK-HGu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQz-Cb-RjU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
